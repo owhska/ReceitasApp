@@ -8,7 +8,7 @@
     <string name="erro_busca">Digite pelo menos 3 letras para buscar</string>
     <string name="label_categorias">Categorias</string>
     <string name="resumo_home">%1$d receitas disponiveis no app</string>
-    <string name="favorito_marcador">&#11088;</string>
+    <string name="favorito_marcador">(Favorita)</string>
     <string name="favoritos_home">Favoritas: %1$d</string>
 
     <string name="lista_vazia">Nenhuma receita encontrada.</string>

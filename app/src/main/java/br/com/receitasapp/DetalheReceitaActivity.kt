@@ -207,8 +207,6 @@ private fun CabecalhoReceita(receita: Receita) {
         )
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
-            Text(text = receita.emoji, style = MaterialTheme.typography.displaySmall)
-            Spacer(modifier = Modifier.height(8.dp))
             Text(
                 text = receita.nome,
                 style = MaterialTheme.typography.headlineSmall,

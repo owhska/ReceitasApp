@@ -5,9 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="16dp"
+    app:cardCornerRadius="12dp"
     app:cardElevation="2dp"
-    app:cardBackgroundColor="@color/superficie">
+    app:cardBackgroundColor="@color/surface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,23 +20,23 @@
             android:id="@+id/txtEmojiCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32sp" />
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/txtNomeCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/texto_primario"
-            android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtQtdCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/texto_secundario"
-            android:textSize="12sp" />
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

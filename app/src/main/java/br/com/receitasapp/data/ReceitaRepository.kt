@@ -19,7 +19,7 @@ object ReceitaRepository {
             id = 1,
             nome = "Brigadeiro de Colher",
             categoria = "Doces",
-            emoji = "\uD83C\uDF6B",
+            emoji = "",
             tempoPreparoMin = 20,
             porcoesBase = 4,
             dificuldade = "Facil",
@@ -40,7 +40,7 @@ object ReceitaRepository {
             id = 2,
             nome = "Bolo de Cenoura",
             categoria = "Doces",
-            emoji = "\uD83C\uDF82",
+            emoji = "",
             tempoPreparoMin = 60,
             porcoesBase = 8,
             dificuldade = "Media",
@@ -63,7 +63,7 @@ object ReceitaRepository {
             id = 3,
             nome = "Strogonoff de Frango",
             categoria = "Carnes",
-            emoji = "\uD83C\uDF57",
+            emoji = "",
             tempoPreparoMin = 40,
             porcoesBase = 4,
             dificuldade = "Facil",
@@ -85,7 +85,7 @@ object ReceitaRepository {
             id = 4,
             nome = "Macarrao Alho e Oleo",
             categoria = "Massas",
-            emoji = "\uD83C\uDF5D",
+            emoji = "",
             tempoPreparoMin = 25,
             porcoesBase = 2,
             dificuldade = "Facil",
@@ -106,7 +106,7 @@ object ReceitaRepository {
             id = 5,
             nome = "Lasanha a Bolonhesa",
             categoria = "Massas",
-            emoji = "\uD83C\uDF5B",
+            emoji = "",
             tempoPreparoMin = 75,
             porcoesBase = 6,
             dificuldade = "Dificil",
@@ -128,7 +128,7 @@ object ReceitaRepository {
             id = 6,
             nome = "Salada Caesar",
             categoria = "Saladas",
-            emoji = "\uD83E\uDD57",
+            emoji = "",
             tempoPreparoMin = 15,
             porcoesBase = 2,
             dificuldade = "Facil",
@@ -148,7 +148,7 @@ object ReceitaRepository {
             id = 7,
             nome = "Sopa de Legumes",
             categoria = "Sopas",
-            emoji = "\uD83C\uDF72",
+            emoji = "",
             tempoPreparoMin = 45,
             porcoesBase = 4,
             dificuldade = "Facil",
@@ -169,7 +169,7 @@ object ReceitaRepository {
             id = 8,
             nome = "Vitamina de Banana",
             categoria = "Bebidas",
-            emoji = "\uD83E\uDD5B",
+            emoji = "",
             tempoPreparoMin = 5,
             porcoesBase = 2,
             dificuldade = "Facil",
@@ -189,7 +189,7 @@ object ReceitaRepository {
             id = 9,
             nome = "Pao de Queijo",
             categoria = "Lanches",
-            emoji = "\uD83E\uDDC0",
+            emoji = "",
             tempoPreparoMin = 50,
             porcoesBase = 6,
             dificuldade = "Media",
@@ -211,7 +211,7 @@ object ReceitaRepository {
             id = 10,
             nome = "Hamburguer Caseiro",
             categoria = "Lanches",
-            emoji = "\uD83C\uDF54",
+            emoji = "",
             tempoPreparoMin = 30,
             porcoesBase = 4,
             dificuldade = "Media",
@@ -232,7 +232,7 @@ object ReceitaRepository {
             id = 11,
             nome = "File de Tilapia Grelhado",
             categoria = "Carnes",
-            emoji = "\uD83D\uDC1F",
+            emoji = "",
             tempoPreparoMin = 20,
             porcoesBase = 2,
             dificuldade = "Facil",
@@ -252,7 +252,7 @@ object ReceitaRepository {
             id = 12,
             nome = "Mousse de Maracuja",
             categoria = "Doces",
-            emoji = "\uD83C\uDF6E",
+            emoji = "",
             tempoPreparoMin = 15,
             porcoesBase = 6,
             dificuldade = "Facil",
@@ -300,17 +300,8 @@ object ReceitaRepository {
      * Monta a lista de categorias ja contando quantas receitas existem em cada uma.
      */
     fun listarCategorias(): List<Categoria> {
-        val emojis = mapOf(
-            "Doces" to "\uD83C\uDF6C",
-            "Massas" to "\uD83C\uDF5D",
-            "Carnes" to "\uD83E\uDD69",
-            "Saladas" to "\uD83E\uDD57",
-            "Sopas" to "\uD83C\uDF72",
-            "Bebidas" to "\uD83E\uDD64",
-            "Lanches" to "\uD83C\uDF54"
-        )
         return receitas.groupBy { it.categoria }
-            .map { (nome, lista) -> Categoria(nome, emojis[nome] ?: "\uD83C\uDF7D", lista.size) }
+            .map { (nome, lista) -> Categoria(nome, "", lista.size) }
             .sortedBy { it.nome }
     }
 

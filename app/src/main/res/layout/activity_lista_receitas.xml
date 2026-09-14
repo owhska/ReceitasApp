@@ -17,9 +17,9 @@
         android:id="@+id/toolbarLista"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/laranja_primario"
+        android:background="@color/primary"
         app:navigationIcon="@android:drawable/ic_menu_revert"
-        app:titleTextColor="@color/branco" />
+        app:titleTextColor="@color/white" />
 
     <TextView
         android:id="@+id/txtTituloLista"
@@ -28,7 +28,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:textColor="@color/texto_primario"
+        android:textColor="@color/text_primary"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/texto_secundario"
+        android:textColor="@color/text_secondary"
         android:textSize="13sp" />
 
     <TextView
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/lista_vazia"
-        android:textColor="@color/texto_secundario"
+        android:textColor="@color/text_secondary"
         android:textSize="15sp"
         android:visibility="gone" />
 

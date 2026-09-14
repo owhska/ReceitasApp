@@ -10,18 +10,18 @@ import androidx.compose.ui.graphics.Color
  * usando as mesmas cores do tema XML para manter consistencia visual.
  */
 private val CoresClaras = lightColorScheme(
-    primary = Color(0xFFB4500A),
+    primary = Color(0xFF1976D2),
     onPrimary = Color(0xFFFFFFFF),
-    primaryContainer = Color(0xFFFFDBC7),
-    onPrimaryContainer = Color(0xFF221A15),
-    secondary = Color(0xFF3E6B3C),
+    primaryContainer = Color(0xFFE3F2FD),
+    onPrimaryContainer = Color(0xFF212121),
+    secondary = Color(0xFF388E3C),
     onSecondary = Color(0xFFFFFFFF),
-    background = Color(0xFFFFF8F5),
-    onBackground = Color(0xFF221A15),
+    background = Color(0xFFF5F5F5),
+    onBackground = Color(0xFF212121),
     surface = Color(0xFFFFFFFF),
-    onSurface = Color(0xFF221A15),
-    surfaceVariant = Color(0xFFF5E6DC),
-    onSurfaceVariant = Color(0xFF6F5B52)
+    onSurface = Color(0xFF212121),
+    surfaceVariant = Color(0xFFE0E0E0),
+    onSurfaceVariant = Color(0xFF666666)
 )
 
 @Composable
