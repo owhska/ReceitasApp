@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TELA 2 - LISTA DE RECEITAS
+    Requisito 6: LinearLayout como gerenciador de layout raiz
+    Requisito 5: TextView e ListView
+    Requisito 4: esta tela usa findViewById (nao usa View Binding)
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarLista"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/laranja_primario"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:titleTextColor="@color/branco" />
+
+    <TextView
+        android:id="@+id/txtTituloLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/texto_primario"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtQtdResultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/texto_secundario"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtListaVazia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/lista_vazia"
+        android:textColor="@color/texto_secundario"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <!-- Requisito 5: ListView com as receitas -->
+    <ListView
+        android:id="@+id/listReceitas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="12dp" />
+
+</LinearLayout>

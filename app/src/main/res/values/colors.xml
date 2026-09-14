@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="laranja_primario">#FFB4500A</color>
+    <color name="laranja_claro">#FFFFDBC7</color>
+    <color name="verde_secundario">#FF3E6B3C</color>
+    <color name="fundo">#FFFFF8F5</color>
+    <color name="superficie">#FFFFFFFF</color>
+    <color name="texto_primario">#FF221A15</color>
+    <color name="texto_secundario">#FF6F5B52</color>
+    <color name="branco">#FFFFFFFF</color>
+</resources>

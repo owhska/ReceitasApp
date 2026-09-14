@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Receitas</string>
+
+    <string name="titulo_home">Livro de Receitas</string>
+    <string name="subtitulo_home">Escolha uma categoria ou busque pelo nome</string>
+    <string name="hint_busca">Buscar receita ou ingrediente</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="erro_busca">Digite pelo menos 3 letras para buscar</string>
+    <string name="label_categorias">Categorias</string>
+    <string name="resumo_home">%1$d receitas disponiveis no app</string>
+    <string name="favorito_marcador">&#11088;</string>
+    <string name="favoritos_home">Favoritas: %1$d</string>
+
+    <string name="lista_vazia">Nenhuma receita encontrada.</string>
+    <string name="qtd_encontradas">%1$d receita(s) encontrada(s)</string>
+
+    <string name="detalhe_titulo">Detalhes da receita</string>
+    <string name="voltar">Voltar</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="modo_preparo">Modo de preparo</string>
+    <string name="porcoes">Porcoes</string>
+    <string name="favoritar">Favoritar</string>
+    <string name="remover_favorito">Remover dos favoritos</string>
+</resources>

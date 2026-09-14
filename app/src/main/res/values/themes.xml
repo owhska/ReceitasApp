@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Requisito 8: tema baseado no Material Design 3 -->
+    <style name="Theme.ReceitasApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/laranja_primario</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorPrimaryContainer">@color/laranja_claro</item>
+        <item name="colorOnPrimaryContainer">@color/texto_primario</item>
+        <item name="colorSecondary">@color/verde_secundario</item>
+        <item name="colorOnSecondary">@color/branco</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="android:statusBarColor">@color/laranja_primario</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>
