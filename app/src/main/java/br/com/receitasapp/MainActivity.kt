@@ -10,18 +10,12 @@ import br.com.receitasapp.viewmodel.MainViewModel
 
 /**
  * TELA 1 - HOME (layout XML).
- *
- * Requisito 4: esta Activity usa VIEW BINDING (ActivityMainBinding).
- * Requisito 5: TextView, EditText, Button e GridView.
- * Requisito 6: ConstraintLayout.
- * Requisito 3: envia parametros para a proxima tela por Intent.
  */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var categoriaAdapter: CategoriaAdapter
 
-    // Requisito 2 (MVVM): a View nao guarda regra de negocio, apenas observa a ViewModel
     private val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,12 +27,13 @@ class MainActivity : AppCompatActivity() {
 
         configurarGrid()
         configurarBusca()
+        configurarCadastro()
         observarViewModel()
     }
 
     override fun onResume() {
         super.onResume()
-        viewModel.atualizarFavoritas()
+        viewModel.carregar()
     }
 
     private fun configurarGrid() {
@@ -62,6 +57,13 @@ class MainActivity : AppCompatActivity() {
                 binding.tilBusca.error = null
                 abrirLista(categoria = null, busca = texto.trim())
             }
+        }
+    }
+
+    private fun configurarCadastro() {
+        binding.btnNovoCadastro.setOnClickListener {
+            val intent = Intent(this, CadastroActivity::class.java)
+            startActivity(intent)
         }
     }
 

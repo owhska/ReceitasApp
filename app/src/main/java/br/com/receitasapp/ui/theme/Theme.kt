@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 /**
- * REQUISITO 8 - Material Design 3 aplicado tambem na tela feita em Compose,
+ * Material Design 3 aplicado tambem na tela feita em Compose,
  * usando as mesmas cores do tema XML para manter consistencia visual.
  */
 private val CoresClaras = lightColorScheme(

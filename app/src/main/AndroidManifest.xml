@@ -28,6 +28,11 @@
             android:name=".DetalheReceitaActivity"
             android:parentActivityName=".ListaReceitasActivity" />
 
+        <!-- Tela de Cadastro -->
+        <activity
+            android:name=".CadastroActivity"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>

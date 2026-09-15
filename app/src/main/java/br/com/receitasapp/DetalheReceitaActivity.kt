@@ -52,10 +52,7 @@ import br.com.receitasapp.viewmodel.DetalheUiState
 /**
  * TELA 3 - DETALHE DA RECEITA.
  *
- * REQUISITO 7: esta tela e construida inteiramente com JETPACK COMPOSE.
- * REQUISITO 3: recebe o id da receita por Intent e usa esse valor para carregar os dados.
- * REQUISITO 2: continua usando MVVM (DetalheReceitaViewModel + StateFlow).
- * REQUISITO 8: componentes Material Design 3 (TopAppBar, Card, Chip, Button).
+ * Esta tela e construida inteiramente com JETPACK COMPOSE.
  */
 class DetalheReceitaActivity : ComponentActivity() {
 
@@ -69,7 +66,6 @@ class DetalheReceitaActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // REQUISITO 3 - valor recebido pela Intent e utilizado nesta tela
         val receitaId = intent.getIntExtra(EXTRA_RECEITA_ID, -1)
         val nomeRecebido = intent.getStringExtra(EXTRA_RECEITA_NOME).orEmpty()
         viewModel.carregar(receitaId)

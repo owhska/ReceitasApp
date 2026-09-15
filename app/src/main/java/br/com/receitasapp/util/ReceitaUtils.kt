@@ -6,7 +6,7 @@ import kotlin.math.abs
 import kotlin.math.roundToInt
 
 /**
- * REQUISITO 1 - Funcoes Kotlin escritas pelo grupo que recebem parametros,
+ * Funcoes Kotlin escritas pelo grupo que recebem parametros,
  * realizam um processamento ligado ao dominio do app e retornam um valor.
  */
 object ReceitaUtils {

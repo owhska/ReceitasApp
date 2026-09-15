@@ -13,11 +13,6 @@ import com.google.android.material.appbar.MaterialToolbar
 
 /**
  * TELA 2 - LISTA DE RECEITAS (layout XML).
- *
- * Requisito 4: esta Activity usa FIND VIEW BY ID (sem View Binding).
- * Requisito 5: TextView e ListView.
- * Requisito 6: LinearLayout.
- * Requisito 3: recebe os parametros enviados pela MainActivity via Intent.
  */
 class ListaReceitasActivity : AppCompatActivity() {
 

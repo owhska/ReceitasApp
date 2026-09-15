@@ -21,4 +21,18 @@
     <string name="porcoes">Porcoes</string>
     <string name="favoritar">Favoritar</string>
     <string name="remover_favorito">Remover dos favoritos</string>
+
+    <!-- Cadastro de Receitas -->
+    <string name="titulo_cadastro">Cadastrar Receita</string>
+    <string name="hint_nome_receita">Nome da Receita</string>
+    <string name="hint_categoria_receita">Categoria (ex: Doces, Carnes)</string>
+    <string name="hint_tempo_receita">Tempo de Preparo (minutos)</string>
+    <string name="hint_porcoes_receita">Quantidade de Porções</string>
+    <string name="hint_dificuldade_receita">Dificuldade (Facil, Media, Dificil)</string>
+    <string name="hint_ingredientes_receita">Ingredientes (um por linha)</string>
+    <string name="hint_preparo_receita">Modo de Preparo (um passo por linha)</string>
+    <string name="btn_salvar_receita">Salvar Receita</string>
+    <string name="btn_nova_receita">Nova Receita</string>
+    <string name="sucesso_cadastro">Receita cadastrada com sucesso!</string>
+    <string name="erro_cadastro">Preencha todos os campos corretamente!</string>
 </resources>

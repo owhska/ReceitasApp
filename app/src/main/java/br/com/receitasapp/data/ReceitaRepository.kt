@@ -14,7 +14,7 @@ object ReceitaRepository {
 
     private val favoritas = mutableSetOf<Int>()
 
-    private val receitas = listOf(
+    private val receitas = mutableListOf(
         Receita(
             id = 1,
             nome = "Brigadeiro de Colher",
@@ -322,4 +322,37 @@ object ReceitaRepository {
     }
 
     fun totalFavoritas(): Int = favoritas.size
+
+    fun adicionarReceita(nome: String, categoria: String, tempo: Int, porcoes: Int, dificuldade: String, ingredientesTexto: String, preparoTexto: String) {
+        val novoId = (receitas.maxOfOrNull { it.id } ?: 0) + 1
+        
+        val listaIngredientes = ingredientesTexto.split("\n")
+            .filter { it.isNotBlank() }
+            .map { it.trim() }
+            .map { line ->
+                if (line.contains("-")) {
+                    val parts = line.split("-", limit = 2)
+                    Ingrediente(parts[1].trim(), 1.0, parts[0].trim())
+                } else {
+                    Ingrediente(line, 1.0, "unidade")
+                }
+            }
+
+        val listaPreparo = preparoTexto.split("\n")
+            .filter { it.isNotBlank() }
+            .map { it.trim() }
+
+        val novaReceita = Receita(
+            id = novoId,
+            nome = nome,
+            categoria = categoria.trim(),
+            emoji = "",
+            tempoPreparoMin = tempo,
+            porcoesBase = porcoes,
+            dificuldade = dificuldade,
+            ingredientes = listaIngredientes,
+            modoPreparo = listaPreparo
+        )
+        receitas.add(novaReceita)
+    }
 }

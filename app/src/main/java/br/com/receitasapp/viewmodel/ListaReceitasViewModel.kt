@@ -7,7 +7,7 @@ import br.com.receitasapp.data.ReceitaRepository
 import br.com.receitasapp.model.Receita
 
 /**
- * CAMADA VIEWMODEL (Requisito 2 - MVVM) da tela de lista.
+ * CAMADA VIEWMODEL da tela de lista.
  *
  * Recebe o parametro que veio pela Intent (categoria ou termo de busca)
  * e decide qual conjunto de receitas deve ser exibido.
@@ -21,7 +21,7 @@ class ListaReceitasViewModel : ViewModel() {
     val titulo: LiveData<String> = _titulo
 
     /**
-     * Requisito 1 e 3: usa o valor recebido por Intent para filtrar a lista.
+     * Usa o valor recebido por Intent para filtrar a lista.
      *
      * @param categoria categoria escolhida no GridView (pode ser nula)
      * @param busca texto digitado na tela inicial (pode ser nulo)
