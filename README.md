@@ -1,9 +1,3 @@
-# ReceitasApp - Mapeamento de Requisitos do Projeto
-
-Este arquivo centraliza o mapeamento de todos os requisitos do projeto avaliados pela banca, mantendo o código limpo, legível e livre de comentários repetitivos.
-
----
-
 ##  Mapeamento dos Requisitos
 
 ### Requisito 1: Funções Kotlin com Parâmetro e Retorno
