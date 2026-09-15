@@ -4,7 +4,7 @@ Este arquivo centraliza o mapeamento de todos os requisitos do projeto avaliados
 
 ---
 
-## 📌 Mapeamento dos Requisitos
+##  Mapeamento dos Requisitos
 
 ### Requisito 1: Funções Kotlin com Parâmetro e Retorno
 Funções escritas pelo grupo que recebem dados de entrada, realizam processamento e retornam resultados utilizados na interface.
